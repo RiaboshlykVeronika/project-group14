@@ -15,7 +15,7 @@ h3,
 h4,
 h5,
 h6{
-    font-family: Titan One;
+    font-family: $accent-font;
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -31,10 +31,7 @@ ul{
 }
 
 body {
-    // background: $primary-background-color;
-    // color: $primary-text-color;
-
-    font-family: DM Sans, sans-serif;
+    font-family: $main-font, sans-serif;
     
     font-weight: 500;
     font-size: 16px;
@@ -49,23 +46,17 @@ body {
 }
 
 .section__title {
-    // color: $primary-text-color;
-    font-family: Titan One;
+    color: $primary-text-accent;
+    font-family: $accent-font;
     font-weight: 400;
     font-size: 58px;
     line-height: 1.17;
     text-align: center;
 
-    margin-bottom: 50px;
-
-
     &--visually-hidden {
         visibility: collapse;
         display: none;
      }
-}
-.section-text {
-    // color: $second-text-color;
 }
 
 .container {
