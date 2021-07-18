@@ -69,7 +69,7 @@ margin-bottom: 15px;
     content: "";  
     width: 26px;
     height: 6px; 
-    background-image: url(../images/ellipse.png);
+    background-image: url('../images/ellipse.png');
   background-repeat: space;
  width: 23px;
     margin: 30px auto 30px auto;
@@ -87,11 +87,38 @@ margin-bottom: 15px;
     transform: translate(-50%,-50%);
     width: 250px;
     height: 250px;
-    background-image: url(../images/prod-ice-mob.png);
+    background-image: url('../images/prod-ice-mob.png');
+    background-size: contain;
     background-repeat: no-repeat;
-}
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url('../images/prod-ice-mob2x.png');}
 
-.product-card--coffee::before{
+    @media screen and (min-width: 768px) {
+        background-image: url('../images/prod-ice-tab.png');
+        width: 220px;
+        height: 225px;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url('../images/prod-ice-tab2x.png');}
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/prod-ice-desk.png');
+    width: 335px;
+    height: 335px;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url('../images/prod-ice-desk2x.png');}
+      }
+    }
+}
+  
+.product-card--coffee::before {
     content: "";
     position: absolute;
     display: inline-block;
@@ -102,11 +129,38 @@ margin-bottom: 15px;
     transform: translate(-50%,-50%);
     width: 250px;
     height: 250px;
-    background-image: url(../images/prod-coffee-mob.png);
+    background-image: url('../images/prod-coffee-mob.png');
+    background-size: contain;
     background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url('../images/prod-coffee-mob2x.png');}
+
+      @media screen and (min-width: 768px) {
+        background-image: url('../images/prod-coffee-tab.png');
+        width: 220px;
+        height: 225px;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url('../images/prod-coffee-tab2x.png');}
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/prod-coffee-desk.png');
+    width: 335px;
+    height: 335px;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url('../images/prod-coffee-desk2x.png');}
+      }
+    }
 }
 
-.product-card--milkshake::before{
+.product-card--milkshake::before {
     content: "";
     position: absolute;
     display: inline-block;
@@ -117,10 +171,35 @@ margin-bottom: 15px;
     transform: translate(-50%,-50%);
     width: 250px;
     height: 250px;
-    background-image: url(../images/prod-shake-mob.png);
+    background-image: url('../images/prod-shake-mob.png');
+    background-size: contain;
     background-repeat: no-repeat;
-    
-}
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url('../images/prod-shake-mob2x.png');}
+
+      @media screen and (min-width: 768px) {
+        background-image: url('../images/prod-shake-tab.png');
+        width: 220px;
+        height: 225px;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url('../images/prod-shake-tab2x.png');}
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/prod-shake-desk.png');
+    width: 335px;
+    height: 335px;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url('../images/prod-shake-desk2x.png');}
+      }
+    }}
 
 .product__list--text {
     color: $color-main;
