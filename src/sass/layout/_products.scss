@@ -1,0 +1,115 @@
+.product-section {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.section__subtitle {
+font-family: $accent-font;
+font-size: 18px;
+line-height: 1.16;
+text-align: center;
+text-transform: uppercase;
+color: $secondary-text-accent;
+margin-bottom: 15px;
+}
+
+.section__title {
+    margin-bottom: 144px;
+}
+
+.section-card--ice, .section-card--coffee, .section-card--milkshake {
+    position: relative;
+    background-color: $accent-bg-pink;
+    border-radius: 24px;
+    padding: 40px;
+    margin-top: 130px;
+}
+
+.section-card--coffee {
+    background-color: $accent-bg-maize;
+}
+
+.section-card--milkshake {
+    background-color: $accent-bg-green;
+}
+
+
+.section__item--title {
+    color: $color-main;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 66px;
+    margin-top: 166px;
+}
+
+.section__item--title::after {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    content: "...";  
+    width: 6px;
+    height: 6px;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%,-50%);    
+    // background-color: $color-main;
+    // border-radius: 50%;
+    margin: 30px auto 30px auto;
+    
+}
+
+.section-card--ice::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 250px;
+    height: 250px;
+    background-image: url(../images/prod-ice-mob.png);
+    background-repeat: no-repeat;
+}
+
+.section-card--coffee::before{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 250px;
+    height: 250px;
+    background-image: url(../images/prod-coffee-mob.png);
+    background-repeat: no-repeat;
+}
+
+.section-card--milkshake::before{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 250px;
+    height: 250px;
+    background-image: url(../images/prod-shake-mob.png);
+    background-repeat: no-repeat;
+    
+}
+
+
+
+.section__list--text {
+    text-align: center;
+    justify-content: center;
+}
