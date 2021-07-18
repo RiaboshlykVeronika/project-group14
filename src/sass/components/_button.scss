@@ -1,0 +1,80 @@
+.button-white {
+    color: $primary-text-accent;
+    background-color: $color-main;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: none;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3;
+
+    &:focus,
+    &:hover{
+        background-color: $btn-bg-hover;
+
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+
+    // дополнительная белая кнопка со шрифтом 400
+    &--secondary-white {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.3;
+
+        &--secondary-white:hover,
+        &--secondary-white:focus {
+            background-color: $btn-bg-hover;
+    
+            transition-property: background-color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+    }
+
+}
+
+
+// розовая кнопка
+.button-pink{
+    color: $color-main;
+    background-color: $btn-bg-accent;
+
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: none;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3;
+
+    &:hover,
+    &:focus {
+        background-color: #C7133E;
+
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+
+    //дополнительная розовая кнопка со шрифтом 400
+    &--secondary-pink {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.3;
+
+        &--secondary-pink:hover,
+        &--secondary-pink:focus {
+            background-color: #C7133E;
+    
+            transition-property: background-color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+
+    }
+}
