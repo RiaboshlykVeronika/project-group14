@@ -1,0 +1,108 @@
+button {
+  padding: 0;
+}
+
+.about {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $secondary-bg-pink;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.container--about {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+}
+
+.about__suptitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.167;
+  text-transform: uppercase;
+  text-align: center;
+  color: $secondary-text-accent;
+  font-family: $accent-font;
+
+  margin-bottom: 15px;
+}
+
+.about__title {
+  font-size: 34px;
+  line-height: 1.147;
+  margin-bottom: 26px;
+}
+
+.thumb {
+  background-image: url(../images/about-backgr-mob.png);
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: bottom;
+  //   background-attachment: fixed;
+
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/about-backgr-mob.png);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/about-backgr-mob2x.png);
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/about-backgr-desk.png);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/about-backgr-desk2x.png);
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    background-image: none;
+  }
+}
+
+.box {
+  margin-top: 40px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.about__description {
+  color: $text-color-black;
+  font-size: 12px;
+  line-height: 1.583;
+  margin-bottom: 20px;
+  letter-spacing: 0;
+
+  &--text {
+    margin-bottom: 26px;
+    color: $text-color-grey;
+  }
+}
+
+.button-white--about {
+  position: relative;
+  padding-left: 37px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-right: 56px;
+
+  font-size: 14px;
+  line-height: 1.286;
+}

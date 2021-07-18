@@ -1,0 +1,20 @@
+// Для кнопок
+%main-button {
+  font-weight: 700px;
+  font-size: 16px;
+  line-height: 1.3125;
+}
+%hero-button {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  border-radius: 20px;
+}
+%white-button {
+  background-color: $color-main;
+  color: $primary-text-accent;
+}
+%accent-button {
+  background-color: $primary-text-accent;
+  color: $color-main;
+}
