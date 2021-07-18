@@ -1,80 +1,104 @@
-.button-white {
-    color: $primary-text-accent;
-    background-color: $color-main;
-    border: none;
-    border-radius: 20px;
-    text-align: center;
-    cursor: pointer;
-    box-shadow: none;
+// Общие стили кнопки
+.button {
+  border: 0;
+  padding: 0;
+  border-radius: 22px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: none;
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.3;
+  &:focus,
+  &:hover {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-    &:focus,
-    &:hover{
-        background-color: $btn-bg-hover;
-
-        transition-property: background-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-
-    // дополнительная белая кнопка со шрифтом 400
-    &--secondary-white {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.3;
-
-        &--secondary-white:hover,
-        &--secondary-white:focus {
-            background-color: $btn-bg-hover;
-    
-            transition-property: background-color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
-    }
-
-}
-
-
-// розовая кнопка
-.button-pink{
-    color: $color-main;
-    background-color: $btn-bg-accent;
-
-    border: none;
-    border-radius: 20px;
-    text-align: center;
-    cursor: pointer;
-    box-shadow: none;
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.3;
+  // Стили кнопок в герое
+  &--hero-buy {
+    @extend %main-button;
+    @extend %white-button;
 
     &:hover,
     &:focus {
-        background-color: #C7133E;
-
-        transition-property: background-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
-
-    //дополнительная розовая кнопка со шрифтом 400
-    &--secondary-pink {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.3;
-
-        &--secondary-pink:hover,
-        &--secondary-pink:focus {
-            background-color: #C7133E;
-    
-            transition-property: background-color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
-
+      background-color: $btn-bg-hover;
     }
+  }
+
+  &--hero-products {
+    @extend %hero-button;
+    @extend %accent-button;
+
+    @media screen and (min-width: 1280px) {
+      font-size: 14px;
+      line-height: 1.285;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $slider-pointer;
+    }
+  }
+
+  &--hero-about {
+    @extend %hero-button;
+    @extend %white-button;
+
+    @media screen and (min-width: 1280px) {
+      font-size: 14px;
+      line-height: 1.285;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $btn-bg-hover;
+    }
+  }
+
+  // Стили кнопки в About
+  &--about {
+    padding-left: 37px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 56px;
+
+    font-size: 14px;
+    line-height: 1.286;
+    font-weight: 700;
+
+    @extend %accent-button;
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 1.3125;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $btn-bg-hover;
+    }
+  }
+
+  // Стили кнопок в Contacts
+  &--contacts-location {
+    @extend %main-button;
+    @extend %accent-button;
+
+    &:hover,
+    &:focus {
+      background-color: $slider-pointer;
+    }
+  }
+
+  &--contacts-franchise {
+    @extend %main-button;
+    @extend %white-button;
+
+    &:hover,
+    &:focus {
+      background-color: $btn-bg-hover;
+    }
+  }
 }
