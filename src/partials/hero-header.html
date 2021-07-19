@@ -1,35 +1,30 @@
 <section class="hero hero-overlay">
    
 <div class="container">
-    <div class="container--header">
+    <div class="container--header hero-bg">
         <div class="hero-bg--ice">
-            <img
-            
-            srcset="./images/hero-ice-mob.png 1x, ./images/hero-ice-mob2x.png 2x"
-                
-            src="./images/hero-ice-mob.png"
-                alt="Описание изображения для всех версий"
-                />
+            <picture>
+                <source srcset="./images/hero-ice-desk.png 1x,./images/hero-ice-desk.png 2x" media="(min-width: 1280px)">
+                <source srcset="./images/hero-ice-tab.png 1x,./images/hero-ice-tab.png 2x" media="(min-width: 768px)">
+                <source srcset="./images/hero-ice-mob.png 1x,./images/hero-ice-mob.png 2x" media="(max-width: 767px)">
+                <img src="./images/hero-ice-mob.png" alt="мороженое">
+            </picture>
         </div>
     
         <div class="hero-bg--milk">
-            <img
-            
-            srcset="./images/hero-milk-desk.png 1x, ./images/hero-milk-desk2x.png 2x"
-                
-            src="./images/hero-milk-desk.png"
-                alt="Описание изображения для всех версий"
-                />
+            <picture>
+                <source srcset="./images/hero-milk-desk.png 1x,./images/hero-milk-desk.png 2x" media="(min-width: 1280px)">
+                <source srcset="./images/hero-milk-tab.png 1x,./images/hero-milk-tab.png 2x" media="(min-width: 768px)">
+                <img src="./images/hero-milk-tab.png" alt="молоко">
+            </picture>
         </div>
     
         <div class="hero-bg--woman">
-            <img
-            
-            srcset="./images/hero-woman-desk.png 1x, ./images/hero-woman-desk2x.png 2x"
-                
-            src="./images/hero-woman-desk.png"
-                alt="Описание изображения для всех версий"
-                />
+            <picture>
+                <source srcset="./images/hero-woman-desk.png 1x,./images/hero-woman-desk.png 2x" media="(min-width: 1280px)">
+                <source srcset="./images/hero-woman-tab.png 1x,./images/hero-woman-tab.png 2x" media="(min-width: 768px)">
+                <img src="./images/hero-woman-tab.png" alt="девушка с мороженым">
+            </picture>
         </div>
     
         <div class="hero-bg--elipce"></div>
@@ -49,19 +44,19 @@
                 
             <ul class="site-nav list">
                 <li class="site-nav__item">
-                  <a href="" class="site-nav__link site-nav__link--current">Home</a>
+                  <a href="" class="site-nav__link">Home</a>
                 </li>
                 <li class="site-nav__item">
-                  <a href="" class="site-nav__link">About us</a>
+                  <a href="#about" class="site-nav__link">About us</a>
                 </li>
                 <li class="site-nav__item">
-                    <a href="" class="site-nav__link">How it’s made?</a>
+                    <a href="#made" class="site-nav__link">How it’s made?</a>
                 </li>   
                 <li class="site-nav__item">
-                    <a href="" class="site-nav__link">Our products</a>
+                    <a href="#products" class="site-nav__link">Our products</a>
                 </li>
                 <li class="site-nav__item">
-                    <a href="" class="site-nav__link">Contact</a>
+                    <a href="#contact" class="site-nav__link">Contact</a>
                 </li>
             </ul>
             </nav>
@@ -83,9 +78,7 @@
             </button>
                   
             </div>
-    
-    
-    
+
         </header> 
         
     <div class="container-hero">
@@ -96,8 +89,12 @@
                 <div class="hero__title--accent">passion</div>
             </h1>
             <div class="hero__button">
-                <button type="button" class="button--hero-products button--hero-products-pink">Products</button>
-                <button type="button" class="button--hero-about button--hero-about-white">How it’s made?</button>
+                <button type="button" class="button--hero-products button--hero-products-pink">
+                    <a href="#products" class="button--hero-products-pink__link">Products</a>
+                </button>
+                <button type="button" class="button--hero-about button--hero-about-white">
+                    <a href="#made" class="button--hero-about-white__link">How it’s made?</a>
+                </button>
             </div>
         </div>
 

@@ -232,6 +232,7 @@ body {
 }
 
 .hero-overlay {
+  overflow: hidden;
   width: 100vw;
   height: 502px;
   margin-left: auto;
@@ -277,7 +278,7 @@ body {
 }
 
 .hero-bg--elipce {
-  position: fixed;
+  position: absolute;
   width: 350px;
   height: 350px;
   left: 16px;
@@ -285,12 +286,6 @@ body {
   background-color: #ffa5ba;
   border-radius: 50%;
   z-index: 2;
-}
-
-@media screen and (min-width: 480px) {
-  .hero-bg--elipce {
-    position: absolute;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -326,7 +321,7 @@ body {
     width: 143px;
     height: 336px;
     left: 340px;
-    top: 57px;
+    bottom: 0;
   }
 }
 
@@ -335,7 +330,7 @@ body {
     width: 236px;
     height: 557px;
     left: 480px;
-    top: 98px;
+    bottom: 0;
   }
 }
 
@@ -603,6 +598,10 @@ body {
   }
 }
 
+.button--hero-products-pink__link {
+  color: white;
+}
+
 .button--hero-about-white {
   width: 80px;
   height: 24px;
@@ -622,6 +621,10 @@ body {
     height: 40px;
     font-size: 14px;
   }
+}
+
+.button--hero-about-white__link {
+  color: #d41443;
 }
 
 .hero-statistic {
