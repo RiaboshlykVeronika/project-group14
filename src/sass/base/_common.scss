@@ -57,6 +57,12 @@ body {
     line-height: 1.147;
     text-align: center;
     letter-spacing: 0.04em;
+
+    &--visually-hidden {
+        visibility: collapse;
+        display: none;
+      }
+      
     @media screen and (min-width: 768px) {
       font-size: 48px;
     }
@@ -65,10 +71,7 @@ body {
       line-height: 1.138;
       letter-spacing: 0.06em;
     }
-    &--visually-hidden {
-      visibility: collapse;
-      display: none;
-    }
+
   }
 
 .section__subtitle {
