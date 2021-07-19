@@ -1,6 +1,11 @@
 .gallery-section {
 padding-top: 0;
 padding-bottom: 0;
+background-image: linear-gradient(
+  to right,
+  $color-main 50%,
+  $secondary-bg-pink 50%,
+);
 }
 
 .gallery-container {
