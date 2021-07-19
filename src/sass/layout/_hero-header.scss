@@ -1,5 +1,5 @@
 .hero-overlay{
-    position: relative;
+    // position: relative;
     width: 100vw;
     height: 502px;
     margin-left: auto;
@@ -83,8 +83,9 @@
 }
 
 
-.container{
+.container--header{
     position: relative;
+    align-items: center;
     height: 502px;
     padding-top: 5px;
 
@@ -100,7 +101,7 @@
     position: absolute;
     width: 170px;
     height: 410px;
-    left: 117px;
+    left: 97px;
     bottom: 0;
 
     z-index: 3;
@@ -108,7 +109,7 @@
     @media screen and (min-width: 768px) {
         width: 143px;
         height: 336px;
-        left: 378px;
+        left: 340px;
         top: 57px;
 
     }
@@ -116,7 +117,7 @@
     @media screen and (min-width: 1280px) {
         width: 236px;
         height: 557px;
-        left: 594px;
+        left: 480px;
         top: 98px;
 
     }
@@ -133,7 +134,7 @@
         display: block;
         width: 124px;
         height: 126px;
-        left: 34px;
+        left: 0;
         top: 245px;
 
     }
@@ -141,7 +142,7 @@
         @media screen and (min-width: 1280px) {
         width: 188px;
         height: 191px;
-        left: 77px;
+        left: 0;
         top: 426px;
     }
 }
@@ -157,16 +158,20 @@
         display: block;
         width: 168px;
         height: 133px;
-        left: 566px;
-        top: 266px;
+        // left: 566px;
+        // top: 266px;
+        right: 0;
+        bottom: 0;
 
     }
 
     @media screen and (min-width: 1280px) {
         width: 293px;
         height: 232px;
-        left: 878px;
-        top: 433px;
+        // left: 878px;
+        // top: 433px;
+        right: 0;
+        bottom: 0;
     }
 }
 
@@ -175,7 +180,7 @@
     position: absolute;
     width: 350px;
     height: 350px;
-    left: 36px;
+    left: 16px;
     top: 83px;
     background-color: $secondary-text-accent;
     border-radius: 50%;
@@ -184,13 +189,13 @@
     @media screen and (min-width: 768px) {
         width: 325px;
         height: 325px;
-        left: 307px;
+        left: 270px;
         top: 31px;}
 
     @media screen and (min-width: 1280px) {
         width: 538px;
         height: 538px;
-        left: 475px;
+        left: 360px;
         top: 52px;}
 }
 
@@ -285,6 +290,8 @@
     height: 45px;
     align-items: center;
     justify-content: center;
+    border: transparent;
+    border-radius: 22px;
     
     @media screen and (min-width: 768px){
         display: flex;
@@ -365,7 +372,7 @@
     margin-top: 20px;
 }
 
-.hero-button-pink--secondary-pink{
+.button--hero-products-pink{
     width: 60px;
     height: 24px;
 
@@ -373,6 +380,7 @@
     line-height: 1.25;
     align-items: center;
     text-align: center;
+    border: transparent;
 
     @media screen and (min-width: 1280px){
         width: 100px;
@@ -382,7 +390,7 @@
     }
 }
 
-.hero-button-white--secondary-white{
+.button--hero-about-white{
     width: 80px;
     height: 24px;
     margin-left: 10px;
@@ -391,6 +399,7 @@
     line-height: 1.25;
     align-items: center;
     text-align: center;
+    border: transparent;
 
     @media screen and (min-width: 1280px){
         width: 140px;
