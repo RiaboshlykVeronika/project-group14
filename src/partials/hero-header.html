@@ -75,7 +75,12 @@
                 </svg>
             </button>
     
-            <button type="button" class="button--hero-buy button-white--hero">Buy now</button>
+            <button type="button" class="button--hero-buy button-white--hero">
+                Buy now
+                <svg class="button-white--hero__icon">
+                    <use href="./images/sprite.svg#arrow"></use>
+                </svg>
+            </button>
                   
             </div>
     
@@ -131,17 +136,24 @@
 
 
     <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu-toggle js-close-menu">close
-            
+        <button class="menu-toggle js-close-menu">
+            <svg width="24" height="16" class="menu-icon--close">
+                <use href="./images/sprite.svg#menu-close"></use>
+            </svg>
         </button>
     
         <div class="mobile-menu">
     
-            <button type="button" class="button-white button-white--mobile-menu">Buy now</button>
+            <button type="button" class="button--hero-buy button-mobile-menu--hero">
+                Buy now
+                <svg class="button-mobile-menu--hero__icon">
+                    <use href="./images/sprite.svg#arrow"></use>
+                </svg>
+            </button>
     
             <ul class="mobile-site-nav list">
                 <li class="mobile--site-nav__item">
-                    <a href="" class="mobile-site-nav__link site-nav__link--current">Home</a>
+                    <a href="" class="mobile-site-nav__link">Home</a>
                   </li>
                   <li class="mobile--site-nav__item">
                     <a href="" class="mobile-site-nav__link">About us</a>
