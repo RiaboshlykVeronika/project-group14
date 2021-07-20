@@ -40,7 +40,7 @@
                                 src="./images/hero-logo.png" >
                     </a>
                         
-            <nav class="page-header__nav"> 
+            <!-- <nav class="page-header__nav">  -->
                 
             <ul class="site-nav list">
                 <li class="site-nav__item">
@@ -59,7 +59,7 @@
                     <a href="#contact" class="site-nav__link">Contact</a>
                 </li>
             </ul>
-            </nav>
+            <!-- </nav> -->
             <button
                 class="menu-toggle js-open-menu"
                 aria-expanded="false"
@@ -70,7 +70,7 @@
                 </svg>
             </button>
     
-            <button type="button" class="button--hero-buy button-white--hero">
+            <button type="button" class="button--hero-buy button-white--hero" data-modal-open>
                 Buy now
                 <svg class="button-white--hero__icon">
                     <use href="./images/sprite.svg#arrow"></use>
@@ -82,7 +82,7 @@
         </header> 
         
     <div class="container-hero">
-        <div class="container-hero--title">
+        <div class="container-hero-title">
             <h1 class="hero__title">
                 <div>ice cream</div>
                 <div>made with</div>
@@ -141,7 +141,7 @@
     
         <div class="mobile-menu">
     
-            <button type="button" class="button--hero-buy button-mobile-menu--hero">
+            <button type="button" class="button--hero-buy button-mobile-menu--hero" data-modal-open>
                 Buy now
                 <svg class="button-mobile-menu--hero__icon">
                     <use href="./images/sprite.svg#arrow"></use>
@@ -150,23 +150,85 @@
     
             <ul class="mobile-site-nav list">
                 <li class="mobile--site-nav__item">
-                    <a href="" class="mobile-site-nav__link">Home</a>
+                    <a href="#home" class="mobile-site-nav__link">Home</a>
                   </li>
                   <li class="mobile--site-nav__item">
-                    <a href="" class="mobile-site-nav__link">About us</a>
+                    <a href="#about" class="mobile-site-nav__link">About us</a>
                   </li>
                   <li class="mobile--site-nav__item">
-                      <a href="" class="mobile-site-nav__link">How it’s made?</a>
+                      <a href="#made" class="mobile-site-nav__link">How it’s made?</a>
                   </li>   
                   <li class="mobile--site-nav__item">
-                      <a href="" class="mobile-site-nav__link">Our products</a>
+                      <a href="#products" class="mobile-site-nav__link">Our products</a>
                   </li>
                   <li class="mobile--site-nav__item">
-                      <a href="" class="mobile-site-nav__link">Contact</a>
+                      <a href="#contact" class="mobile-site-nav__link">Contact</a>
                   </li>  
             </ul> 
     
         </div>
       </div>
+
+
+
+      <!--modal registration form-->
+
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+
+        <form method="GET" class="registrate-form" autocomplete="on">
+            <p class="registrate-form__title">Contact us</p>
+            <div class="registrate-form-field">
+                <label for="client-name" class="registrate-form-field__lable">Name</label>
+                <input 
+                    class="registrate-form-field__input"
+                    type="text" 
+                    name="client-name" 
+                    id="client-name" 
+                    autofocus/>
+
+
+            </div>
+            
+            <div class="registrate-form-field">
+                <label for="tel" class="registrate-form-field__lable">Phone</label>
+                <input 
+                    class="registrate-form-field__input"
+                    type="tel" 
+                    name="tel" 
+                    id="tel"/>
+               
+            </div>
+
+            <div class="registrate-form-field">
+                <label for="mail" class="registrate-form-field__lable">E-mail</label>
+                <input 
+                    class="registrate-form-field__input"
+                    type="email"
+                    name="mail"
+                    id="mail"/>
+                
+            </div>
+            
+            <div class="registrate-form-field">
+                <label for="coment" class="registrate-form-field__lable">Coment</label>
+                <textarea 
+                    name="coment" 
+                    id="coment" 
+                    rows="10" 
+                    placeholder="Enter the text"></textarea>
+            </div>
+
+            <button type="submit" class="button--hero-products button--hero-products-modal">Submit</button>
+
+    ` </form>
+
+            <button class="button-close" data-modal-close>
+                <svg class="button-close__icon">
+                    <use href="./images/sprite.svg#menu-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
 
     
