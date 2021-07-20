@@ -445,7 +445,7 @@ body {
 }
 
 .site-nav__link {
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 16px;
   line-height: 21px;
   -webkit-box-align: center;
@@ -669,7 +669,7 @@ body {
 
 .hero-statistic__item--number {
   font-family: "Titan One", cursive;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 28px;
   line-height: 1.14;
   /* identical to box height */
@@ -687,8 +687,7 @@ body {
 
 .hero-statistic__item--name {
   font-family: "DM Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 8px;
   line-height: 1.25;
   text-align: right;
@@ -724,8 +723,7 @@ body {
   width: 115px;
   height: 50px;
   font-family: "DM Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 8px;
   line-height: 1.5;
   /* or 12px */
@@ -826,7 +824,7 @@ body {
 }
 
 .mobile-site-nav__link {
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.3;
   color: #FFFFFF;
