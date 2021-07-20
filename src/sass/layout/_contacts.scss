@@ -1,25 +1,19 @@
 .section__contacts {
-    background:$secondary-bg-pink;
-    position: relative;
-}
-
-.container__row {
-    padding: 0 50px;
-    position: absolute;
-    top: -80px;
+    background-image: linear-gradient(
+    to bottom,
+    $color-main 10.5%,
+    $secondary-bg-pink 90px)
 }
 
 .contacts {
+    max-width: 220px;
     padding: 43px 20px;
-    margin-bottom: 20px;
+    margin: 20px auto;
     font-size: 12px;
     background: #FFFFFF;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     font-family: $main-font;
-    &:nth-child(3) {
-        margin-bottom: 50px;
-    }
     .contacts__category {
         padding: 0 24px;
         display: inline;
@@ -34,6 +28,8 @@
     }
     .contacts__subtitle {
         margin-top: 25px;
+        font-size: 12px;
+        text-transform: capitalize;
         font-family:$main-font;
         &-mt {
             margin-top: 10px;
@@ -66,25 +62,29 @@
 }
 
 .button__block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+    margin-top: 50px;
+    display: block;
 }
 
-.button__contacts {
-    border:none;
-    border-radius:22px;
-    padding: 15px;
-    font-size: 16px;
-}
-
-.button__contacts-red {
+.button__red {
     background:$btn-bg-accent;
     color:$color-main;
-    margin-bottom: 10px;
+    padding: 13px 19px;
     display: flex;
     align-items: center;
+    margin: 0 auto;
+}
+
+.button__white {
+    background:$color-main;
+    color:$contact-icon-hover;
+    margin: 10px auto;
+    padding: 13px 35px;
+    display: flex;
+    align-items: center;
+    &:hover, &:focus {
+        background:$btn-bg-hover;
+    }
 }
 
 .button__svg-white {
@@ -97,14 +97,87 @@
     margin-left: 10px;
 }
 
-.button__contacts-white {
-    background:$color-main;
-    color:$contact-icon-hover;
-    margin-bottom: 60px;
-    padding: 15px 31px;
-    display: flex;
-    align-items: center;
-    &:hover, &:focus {
-        background:$btn-bg-hover;
+
+@media screen and (min-width:768px) {
+    .section__contacts {
+        background-image: linear-gradient(
+        to bottom,
+        $color-main 21.5%,
+        $secondary-bg-pink 90px)
+    }
+    .container__row {
+        display: flex;
+        justify-content: space-between;
+    }
+    .contacts {
+        padding: 50px 45px 50px 30px;
+        margin:0;
+        font-size: 14px;
+        .contacts__category {
+            padding: 4px 16px;
+            font-size: 16px;
+        }
+        .contacts__subtitle {
+            margin-top: 30px;
+            font-size: 14px;
+            &-mt {
+                margin-top: 15px;
+            }
+        }
+        .contacts__text {
+            color:$text-color-grey;
+            margin:15px 0 30px 0;
+        }
+        .contacts__time {
+            color:$secondary-text-accent;
+            margin:0;
+            &-mb {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .flex-basis {
+        flex-basis: calc((100% - 60px) / 3 );
+    }
+    .button__block {
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+    }
+    .button__red {
+        padding:13px 34px;
+    }
+    .button__white {
+        margin: 0 0 0 15px;
+        padding:13px 42px;
+    }
+}
+
+
+@media screen and (min-width:1280px) {
+    .section__contacts {
+        background-image: linear-gradient(
+        to bottom,
+        $color-main 23.5%,
+        $secondary-bg-pink 90px)
+    }
+    .contacts {
+        max-width: 330px;
+        padding: 50px 45px 60px 45px;
+        font-size: 16px;
+        .contacts__subtitle {
+            margin-top: 30px;
+            font-size: 16px;
+        }
+    }
+    .button__block {
+        margin-top: 85px;
+    }
+    .button__red {
+        padding:13px 38px;
+    }
+    .button__white {
+        margin: 0 0 0 15px;
+        padding:13px 45px;
     }
 }
