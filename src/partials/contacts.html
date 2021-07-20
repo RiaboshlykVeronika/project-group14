@@ -1,7 +1,8 @@
-<section class="section section__contacts">
-    <h2 class="section-title visually-hidden">contacts</h2>
+<section id="contact" class="section section__contacts">
+    <h2 class="section-title section__title--visually-hidden">contacts</h2>
     <div class="container container__row">
-        <ul class="contacts">
+        <div class="flex__basis">
+            <ul class="contacts">
             <li class="contacts__item">
                 <p class="contacts__category">cafe</p>
             </li>
@@ -34,7 +35,9 @@
                 <a class="contacts__link" href="mailto:noreply@envato.com">noreply@envato.com</a>
             </li>
         </ul>
-        <ul class="contacts">
+        </div>
+        <div class="flex__basis">
+            <ul class="contacts">
             <li class="contacts__item">
                 <p class="contacts__category contacts__category-background-green">foodtruck</p>
             </li>
@@ -55,10 +58,10 @@
                 </p>
             </li>
             <li class="contacts__item">
-                <h3 class="contacts__subtitle">
+                <h3 class="contacts__subtitle contacts__subtitle-mt">
                     Saturday - Sunday
                 </h3>
-                <p class="contacts__time">
+                <p class="contacts__time contacts__time-mb">
                     08:00 AM - 16:00 PM
                 </p>
             </li>
@@ -67,7 +70,9 @@
                 <a class="contacts__link" href="mailto:noreply@envato.com">noreply@envato.com</a>
             </li>
         </ul>
-        <ul class="contacts">
+        </div>
+        <div class="flex__basis">
+            <ul class="contacts">
             <li class="contacts__item">
                 <p class="contacts__category">cafe</p>
             </li>
@@ -88,10 +93,10 @@
                 </p>
             </li>
             <li class="contacts__item">
-                <h3 class="contacts__subtitle">
+                <h3 class="contacts__subtitle contacts__subtitle-mt">
                     Saturday - Sunday
                 </h3>
-                <p class="contacts__time">
+                <p class="contacts__time contacts__time-mb">
                     08:00 AM - 16:00 PM
                 </p>
             </li>
@@ -100,17 +105,18 @@
                 <a class="contacts__link" href="mailto:noreply@envato.com">noreply@envato.com</a>
             </li>
         </ul>
-        <ul class="button__block">
-            <li>
-                <button class="button__contacts button__contacts-red" type="button">Our Locations <svg class="button__svg-white" width="10px" height="14px"><use href="/images/sprite.svg#arrow"></use></svg></button>
-            </li>
-            <li>
-                <button class="button__contacts button__contacts-white" type="button">Franchise 
-                    <svg class="button__svg-red" width="10px" height="14px">
-                        <use href="/images/sprite.svg#arrow"></use>
-                    </svg>
-                </button>
-            </li>
-        </ul>
+        </div>
     </div>
+    <ul class="button__block">
+        <li>
+            <button class="button button__red" type="button">Our Locations <svg class="button__svg-white" width="10px" height="14px"><use href="/images/sprite.svg#arrow"></use></svg></button>
+        </li>
+        <li>
+            <button class="button button__white" type="button">Franchise 
+                <svg class="button__svg-red" width="10px" height="14px">
+                    <use href="/images/sprite.svg#arrow"></use>
+                </svg>
+            </button>
+        </li>
+    </ul>
 </section>
