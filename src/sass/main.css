@@ -233,7 +233,7 @@ body {
 
 .hero-overlay {
   overflow: hidden;
-  width: 100vw;
+  width: 100%;
   height: 502px;
   margin-left: auto;
   margin-right: auto;
@@ -244,7 +244,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .hero-overlay {
-    width: 100vw;
     height: 400px;
   }
 }
@@ -1898,6 +1897,14 @@ textarea {
 
 .section__contacts {
   background-image: linear-gradient(to bottom, #ffffff 10.5%, #fff5f6 90px);
+  position: relative;
+}
+
+.section__background {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 215px;
 }
 
 .contacts__item {
@@ -1979,7 +1986,7 @@ textarea {
 .button__red {
   background: #d41342;
   color: #ffffff;
-  padding: 13px 19px;
+  padding: 13px 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1987,19 +1994,21 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
+  font-weight: bold;
 }
 
 .button__white {
   background: #ffffff;
   color: #d41443;
   margin: 10px auto;
-  padding: 13px 35px;
+  padding: 13px 33px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-weight: bold;
 }
 
 .button__white:hover, .button__white:focus {
@@ -2073,17 +2082,20 @@ textarea {
     margin-top: 80px;
   }
   .button__red {
-    padding: 13px 34px;
+    padding: 13px 31px;
   }
   .button__white {
     margin: 0 0 0 15px;
-    padding: 13px 42px;
+    padding: 13px 39px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .section__contacts {
     background-image: linear-gradient(to bottom, #ffffff 23.5%, #fff5f6 90px);
+  }
+  .section__background {
+    display: block;
   }
   .contacts__item {
     max-width: 330px;
@@ -2098,11 +2110,11 @@ textarea {
     margin-top: 85px;
   }
   .button__red {
-    padding: 13px 38px;
+    padding: 13px 35px;
   }
   .button__white {
     margin: 0 0 0 15px;
-    padding: 13px 45px;
+    padding: 13px 42px;
   }
 }
 
