@@ -5,15 +5,19 @@
     $secondary-bg-pink 90px)
 }
 
-.contacts {
-    max-width: 220px;
+.contacts__item {
     padding: 43px 20px;
-    margin: 20px auto;
+    margin: 20px 30px;
     font-size: 12px;
     background: #FFFFFF;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     font-family: $main-font;
+    &:nth-child(3) {
+        margin-bottom: 0;
+    }
+    
+    
     .contacts__category {
         padding: 0 24px;
         display: inline;
@@ -97,19 +101,26 @@
     margin-left: 10px;
 }
 
+@media screen and (min-width:480px) {
+    .contact {
+        padding: 0 50px;
+    }    
+}
 
 @media screen and (min-width:768px) {
     .section__contacts {
         background-image: linear-gradient(
         to bottom,
-        $color-main 21.5%,
+        $color-main 23.5%,
         $secondary-bg-pink 90px)
     }
-    .container__row {
+    .contacts {
         display: flex;
         justify-content: space-between;
+        padding: 0;
     }
-    .contacts {
+    .contacts__item {
+        max-width:220px;
         padding: 50px 45px 50px 30px;
         margin:0;
         font-size: 14px;
@@ -136,9 +147,6 @@
             }
         }
     }
-    .flex-basis {
-        flex-basis: calc((100% - 60px) / 3 );
-    }
     .button__block {
         display: flex;
         justify-content: center;
@@ -161,7 +169,7 @@
         $color-main 23.5%,
         $secondary-bg-pink 90px)
     }
-    .contacts {
+    .contacts__item {
         max-width: 330px;
         padding: 50px 45px 60px 45px;
         font-size: 16px;
