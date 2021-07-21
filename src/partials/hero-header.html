@@ -1,28 +1,28 @@
-<section class="hero hero-overlay">
+<section id="home" class="hero hero-overlay">
    
 <div class="container">
     <div class="container--header hero-bg">
         <div class="hero-bg--ice">
             <picture>
-                <source srcset="./images/hero-ice-desk.png 1x,./images/hero-ice-desk.png 2x" media="(min-width: 1280px)">
-                <source srcset="./images/hero-ice-tab.png 1x,./images/hero-ice-tab.png 2x" media="(min-width: 768px)">
-                <source srcset="./images/hero-ice-mob.png 1x,./images/hero-ice-mob.png 2x" media="(max-width: 767px)">
+                <source srcset="./images/hero-ice-desk.png 1x,./images/hero-ice-desk2x.png 2x" media="(min-width: 1280px)">
+                <source srcset="./images/hero-ice-tab.png 1x,./images/hero-ice-tab2x.png 2x" media="(min-width: 768px)">
+                <source srcset="./images/hero-ice-mob.png 1x,./images/hero-ice-mob2x.png 2x" media="(max-width: 767px)">
                 <img src="./images/hero-ice-mob.png" alt="мороженое">
             </picture>
         </div>
     
         <div class="hero-bg--milk">
             <picture>
-                <source srcset="./images/hero-milk-desk.png 1x,./images/hero-milk-desk.png 2x" media="(min-width: 1280px)">
-                <source srcset="./images/hero-milk-tab.png 1x,./images/hero-milk-tab.png 2x" media="(min-width: 768px)">
+                <source srcset="./images/hero-milk-desk.png 1x,./images/hero-milk-desk2x.png 2x" media="(min-width: 1280px)">
+                <source srcset="./images/hero-milk-tab.png 1x,./images/hero-milk-tab2x.png 2x" media="(min-width: 768px)">
                 <img src="./images/hero-milk-tab.png" alt="молоко">
             </picture>
         </div>
     
         <div class="hero-bg--woman">
             <picture>
-                <source srcset="./images/hero-woman-desk.png 1x,./images/hero-woman-desk.png 2x" media="(min-width: 1280px)">
-                <source srcset="./images/hero-woman-tab.png 1x,./images/hero-woman-tab.png 2x" media="(min-width: 768px)">
+                <source srcset="./images/hero-woman-desk.png 1x,./images/hero-woman-desk2x.png 2x" media="(min-width: 1280px)">
+                <source srcset="./images/hero-woman-tab.png 1x,./images/hero-woman-tab2x.png 2x" media="(min-width: 768px)">
                 <img src="./images/hero-woman-tab.png" alt="девушка с мороженым">
             </picture>
         </div>
@@ -44,7 +44,7 @@
                 
             <ul class="site-nav list">
                 <li class="site-nav__item">
-                  <a href="" class="site-nav__link">Home</a>
+                  <a href="#home" class="site-nav__link">Home</a>
                 </li>
                 <li class="site-nav__item">
                   <a href="#about" class="site-nav__link">About us</a>
@@ -88,14 +88,20 @@
                 <div>made with</div>
                 <div class="hero__title--accent">passion</div>
             </h1>
-            <div class="hero__button">
-                <button type="button" class="button--hero-products button--hero-products-pink">
-                    <a href="#products" class="button--hero-products-pink__link">Products</a>
-                </button>
-                <button type="button" class="button--hero-about button--hero-about-white">
-                    <a href="#made" class="button--hero-about-white__link">How it’s made?</a>
-                </button>
-            </div>
+
+            <ul class="hero-button">
+                <li class="hero-button__item">
+                    <button type="button" class="button--hero-products button--hero-products-pink">
+                        <a href="#products" class="button--hero-products-pink__link">Products</a>
+                    </button>
+                </li>
+                <li class="hero-button__item">
+                    <button type="button" class="button--hero-about button--hero-about-white">
+                        <a href="#made" class="button--hero-about-white__link">How it’s made?</a>
+                    </button>
+                </li>
+            </ul>
+
         </div>
 
             <ul class="hero-statistic">
