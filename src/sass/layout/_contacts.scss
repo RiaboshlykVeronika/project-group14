@@ -2,18 +2,30 @@
     background-image: linear-gradient(
     to bottom,
     $color-main 10.5%,
-    $secondary-bg-pink 90px)
+    $secondary-bg-pink 90px);
+    position: relative;
 }
 
-.contacts {
-    max-width: 220px;
+.section__background {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 215px;
+}
+
+.contacts__item {
     padding: 43px 20px;
-    margin: 20px auto;
+    margin: 20px 30px;
     font-size: 12px;
     background: #FFFFFF;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     font-family: $main-font;
+    &:nth-child(3) {
+        margin-bottom: 0;
+    }
+    
+    
     .contacts__category {
         padding: 0 24px;
         display: inline;
@@ -69,9 +81,10 @@
 .button__red {
     background:$btn-bg-accent;
     color:$color-main;
-    padding: 13px 19px;
+    padding: 13px 16px;
     display: flex;
     align-items: center;
+    font-weight: bold;
     margin: 0 auto;
 }
 
@@ -79,9 +92,10 @@
     background:$color-main;
     color:$contact-icon-hover;
     margin: 10px auto;
-    padding: 13px 35px;
+    padding: 13px 33px;
     display: flex;
     align-items: center;
+    font-weight: bold;
     &:hover, &:focus {
         background:$btn-bg-hover;
     }
@@ -97,19 +111,20 @@
     margin-left: 10px;
 }
 
-
 @media screen and (min-width:768px) {
     .section__contacts {
         background-image: linear-gradient(
         to bottom,
-        $color-main 21.5%,
+        $color-main 23.5%,
         $secondary-bg-pink 90px)
     }
-    .container__row {
+    .contacts {
         display: flex;
         justify-content: space-between;
+        padding: 0;
     }
-    .contacts {
+    .contacts__item {
+        max-width:220px;
         padding: 50px 45px 50px 30px;
         margin:0;
         font-size: 14px;
@@ -136,24 +151,19 @@
             }
         }
     }
-    .flex-basis {
-        flex-basis: calc((100% - 60px) / 3 );
-    }
     .button__block {
         display: flex;
         justify-content: center;
         margin-top: 80px;
     }
     .button__red {
-        padding:13px 34px;
+        padding:13px 35px;
     }
     .button__white {
         margin: 0 0 0 15px;
-        padding:13px 42px;
+        padding:13px 40px;
     }
 }
-
-
 @media screen and (min-width:1280px) {
     .section__contacts {
         background-image: linear-gradient(
@@ -161,7 +171,10 @@
         $color-main 23.5%,
         $secondary-bg-pink 90px)
     }
-    .contacts {
+    .section__background {
+        display: block;
+    }
+    .contacts__item {
         max-width: 330px;
         padding: 50px 45px 60px 45px;
         font-size: 16px;
@@ -174,10 +187,10 @@
         margin-top: 85px;
     }
     .button__red {
-        padding:13px 38px;
+        padding:13px 35px;
     }
     .button__white {
         margin: 0 0 0 15px;
-        padding:13px 45px;
+        padding:13px 42px;
     }
 }
