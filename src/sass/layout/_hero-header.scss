@@ -27,6 +27,7 @@
     align-items: center;
     height: 502px;
     padding-top: 5px;
+    overflow: hidden;
 
     @media screen and (min-width: 768px) {
         padding-top: 35px;
@@ -68,6 +69,10 @@
 
     z-index: 3;
 
+    animation-name: bg-images-ice;
+    animation-duration: 500ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     @media screen and (min-width: 768px) {
         position: absolute;
         width: 143px;
@@ -84,6 +89,14 @@
     }
 }
 
+@keyframes bg-images-ice{
+    0%{
+        bottom: -1000px; }
+
+    100%{
+        bottom: 0; }
+}
+
 .hero-bg--milk{
     position: absolute;
 
@@ -97,6 +110,10 @@
         height: 126px;
         left: 0;
         top: 245px;
+
+        animation-name: bg-images-milk;
+        animation-duration: 500ms;
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
         @media screen and (min-width: 1280px) {
@@ -107,12 +124,23 @@
     }
 }
 
+@keyframes bg-images-milk{
+    0%{
+        left: -1000px; }
+    100%{
+        left: 0; }
+}
+
 .hero-bg--woman{
     position: absolute;
 
     display: none;
 
     z-index: 3;
+
+    animation-name: bg-images-woman;
+    animation-duration: 500ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 768px) {
         display: block;
@@ -128,6 +156,13 @@
         right: 0;
         bottom: 0;
     }
+}
+
+@keyframes bg-images-woman{
+    0%{
+        right: -1000px; }
+    100%{
+        right: 0; }
 }
 
 .top {
@@ -357,6 +392,8 @@
 
 .hero-statistic{
     display: none;
+    margin-right: 16px;
+
     @media screen and (min-width: 768px){
         display: block;
         height: 50px;
