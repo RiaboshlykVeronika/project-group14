@@ -11,4 +11,4 @@ $(function(){$(".customer-reviews").slick({arrows:!1,dots:!0,autoplay:!0,autopla
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/mobile-menu.js"),require("./js/modal.js"),require("./js/scroll.js"),require("./js/slider.js");
 },{"./sass/main.scss":"clu1","./js/mobile-menu.js":"sByI","./js/modal.js":"RSqK","./js/scroll.js":"N8YO","./js/slider.js":"wzuc"}]},{},["Focm"], null)
-//# sourceMappingURL=/project-group14/src.4e9eab48.js.map
+//# sourceMappingURL=/project-group14/src.49e87545.js.map
