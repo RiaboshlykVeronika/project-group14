@@ -527,7 +527,7 @@
 .hero-content__icon-arrow{
     width: 6px;
     height: 6px;
-    stroke: #d41443;
+    fill: $contact-icon-hover;
 
     @media screen and (min-width: 1280px){
         width: 10px;
