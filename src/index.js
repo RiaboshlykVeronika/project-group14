@@ -3,3 +3,4 @@ import './sass/main.scss';
 import './js/mobile-menu.js';
 import './js/modal.js';
 import './js/scroll.js';
+import './js/slider.js';

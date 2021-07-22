@@ -1,8 +1,3 @@
-.customer-reviews__wrap:nth-child(2),
-.customer-reviews__wrap:nth-child(3) {
-  display: none;
-}
-
 .customer-reviews__img-wrap {
   margin: 0 auto;
   display: flex;
@@ -114,34 +109,5 @@
   color: $text-color-black;
   @media screen and (min-width: 768px) {
     font-size: 16px;
-  }
-}
-
-.customer-reviews__list-pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.customer-reviews__item-pagination:first-child {
-  margin-right: 18px;
-  &::before {
-    display: inline-block;
-    width: 13px;
-    height: 12px;
-    background-image: url(../../src/images/home.svg);
-    content: ' ';
-  }
-}
-
-.customer-reviews__item-pagination:not(:first-child) {
-  margin-right: 18px;
-  &::before {
-    display: inline-block;
-    background-color: $pagination-main;
-    content: ' ';
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
   }
 }
